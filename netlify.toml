@@ -1,0 +1,13 @@
+[images]
+  remote_images = []
+
+[build]
+  command = "bun run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
